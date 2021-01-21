@@ -30,9 +30,10 @@ void setup() {
   /* NOTA: ¿Contador roll_wrong se reiniciará cuando el día finalice?
      roll_wrong = 0; */
 }
-
 void loop() {
+
   /* Aqui hacemos la lectura de ROLL, PITCH y YAW */
+  
   roll = random(-90, 90);  //-> SOLO PARA DEMOSTRACION!!, Obtenemos un valor aleatorio entre -90 a 90, para simular la lectura del MPU
   
   if (millis() - lastCheck  >= period) {      // Si ha transcurrido la cant. de tiempo establecido para hacer otra muestra.
